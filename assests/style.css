@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.way {
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation: way 21s linear infinite;
+}
+
+@keyframes way {
+   from {
+    left: 0;
+    top: 0;
+   }
+    to{
+        left: -200%;
+        top: 0;
+    }
+}
+
+
+.way img {
+    width: 4000px;
+    height: 600px;
+}
+
+.tekerler{
+    width: 30%;
+    display: flex;
+    position: absolute;
+    top: 350px;
+    left: 107px;
+    z-index: -1;
+    
+}
+
+@keyframes tekerler {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.tekerler img{
+    width:90px;
+    animation: tekerler 5s linear infinite;
+    
+}
+
+.tekerler img:nth-child(1){
+    margin-right: 265px;
+}
+
+
+.kuza {
+    width: 35%;
+    position: absolute;
+    left: 0;
+    top: 230px;
+    transform: rotate(357deg);
+    animation: kuza 1s linear infinite;
+}
+@keyframes kuza {
+0%{
+    transform: translateY(1);
+}
+50%{
+    transform: translateY(0);
+}
+100%{
+    
+    transform: translateY(1);
+}
+    
+}
+.kuza img {
+    width: 100%;
+}
+
+.car-container{
+    width: 35%;
+}
